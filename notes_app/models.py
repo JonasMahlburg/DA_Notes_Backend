@@ -4,7 +4,7 @@ from django.db import models
 class Note(models.Model):
     content = models.TextField(max_length=500)
     title = models.CharField(max_length=50)
-    date = models.DateTimeField((), auto_now=False, auto_now_add=True)
+    date = models.DateTimeField(auto_now=False, auto_now_add=True)
     marked = models.BooleanField(default=False)
     trash =  models.BooleanField(default=False)
 
